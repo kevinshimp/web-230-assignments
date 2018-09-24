@@ -1,6 +1,6 @@
 <?php
 
-include_once 'header2.inc.php';
+include_once 'header.inc.php';
 
-
+echo $var2;
  ?>
