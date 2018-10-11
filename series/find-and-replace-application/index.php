@@ -8,7 +8,8 @@ $offset = 0;
 
         /* It checks if the text, searchfor and replacewith variables are set. We do this to make sure that the user
         fills in each piece of data to give the variable a value.   */
-if(isset($_POST['text'])&&isset($_POST['searchfor'])&&isset($_POST['replacewith'])){
+if (isset($_POST['text'])&&isset($_POST['searchfor'])&&isset($_POST['replacewith'])){
+
     // 03.Provide a reason why we would make a variable to capture a variable we could already use.
 
           /*  To make sure that the variable is getting used for the current if statement and can be found.  */
@@ -52,7 +53,7 @@ if(isset($_POST['text'])&&isset($_POST['searchfor'])&&isset($_POST['replacewith'
   on/submit the form to. Method describes what kind of method that it is going to use to send or POST the data.  -->
 <form action="index.php" method="POST">
   <textarea name="text" rows="6" cols="30"></textarea><br><br>
-  Search for:<br><br>
+  Search for:<br>
   <input type="text" name="searchfor"><br><br>
   Replace with:<br>
   <input type="text" name="replacewith"><br><br>
