@@ -1,0 +1,26 @@
+header {
+  background-color: Black;
+  color: White;
+  padding: 30px;
+}
+
+footer {
+  background-color: Black;
+  color: White;
+  padding: 30px;
+  text-align:center;
+
+}
+
+
+textarea {
+  width: 90%;
+  height: 150px;
+  margin: auto;
+  padding:12px 20px;
+  border: 2px solid Gray;
+  border-radius: 4px;
+  background-color: lightgray;
+  font-size: 16px;
+  resize: none;
+}
