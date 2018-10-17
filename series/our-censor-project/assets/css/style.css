@@ -1,9 +1,14 @@
+
 header {
   background-color: Black;
   color: White;
   padding: 30px;
 }
 
+header a{
+  text-decoration: none;
+  color:White;
+}
 footer {
   background-color: Black;
   color: White;
@@ -23,4 +28,42 @@ textarea {
   background-color: lightgray;
   font-size: 16px;
   resize: none;
+}
+
+
+nav {
+    display: inline-block;
+    float: right;
+
+  }
+
+nav ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0 15px;
+    color: White;
+    font-size: 16px;
+}
+
+nav ul li {
+    position: relative;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li a:hover{
+  background-color: #FFF;
+  color: #000;
 }
