@@ -11,3 +11,8 @@ if ($redirect==true) {
 }
 
  ?>
+<!--// 01. Explaine what is happening here. header('Location: '.$redirect_page);
+
+it is telling the header what the location is and then the redirect variable is telling it the Location
+it wants to redirect thepage to.
+ -->
