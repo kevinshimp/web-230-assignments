@@ -1,15 +1,13 @@
 <?php
 
-// 01. Explain what the following if statement is doing.
-/*  It is checking if the value for the $_GET day date and Year
-are set and then if they are not empty it is telling the browser where to
-get it. The else is if there ie no value in the field at all it will
-request that you fill in all fields.    */
 
 if (isset($_GET['day'])&&isset($_GET['date'])&&isset($_GET['year'])) {
-$day = $_GET['day'];
-$date = $_GET['date'];
-$year = $_GET['year'];
+// 01. Explain what htmlentities is doing.
+/*  Takes html written in text box and displays it on the page as written
+ instead of processing it on the page   */
+$day = htmlentities($_GET['day']);
+$date = htmlentities($_GET['date']);
+$year = htmlentities($_GET['year']);
 
   if (!empty($day)&&!empty($date)&&!empty($year)) {
 
