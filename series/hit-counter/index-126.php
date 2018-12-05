@@ -4,9 +4,10 @@ $user_ip = $_SERVER['REMOTE_ADDR'];
 
 function ip_exists($ip) {
   global $user_ip;
+  global $con;
   $query = "SELECT ip FROM hits_ip='$user_ip'";
-  $query_run = mysqli_query($query);
-  $query_num_rows = mysqli_num_rows($query_run)
+  $query_run = mysqli_query($con, $query);
+  $query_num_rows = mysqli_num_rows($query_run);
 if ($query_num_rows==0){
   return false;
 } else if ($query_num_rows>=1) {
