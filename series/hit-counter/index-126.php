@@ -22,12 +22,12 @@ function ip_add($ip) {
 
 function update_count() {
 $query = "SELECT count FROM hits_count";
-if (@$query_run = mysqli_query($query)) {
+if ($query_run = mysqli_query($query)) {
   $count = mysqli_result($query_run, 0, 'count');
-  $count_inc = $count + 1;
+  $count_inc = $count[0]+1;
 
   $query_update = "UPDATE hits_count SET count = '$count_inc'";
-  @$query_update_run = mysqli_query($query_update);
+  $query_update_run = mysqli_query($query_update);
 
 }
 

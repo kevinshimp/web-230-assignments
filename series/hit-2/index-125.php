@@ -4,6 +4,7 @@ $user_ip = $_SERVER['REMOTE_ADDR'];
 
 function ip_exists($ip) {
   global $user_ip;
+  global $con;
   $query = "SELECT `ip` FROM `hits_ip`='$user_ip'";
   $query_run = mysqli_query($query);
 
@@ -11,7 +12,7 @@ function ip_exists($ip) {
 
 function ip_add($ip) {
   $query = "INSERT INTO `hits_ip` VALUES ('$ip')";
-  $query_run = mysqli_query($query);
+  $query_run = mysqli_query($con,$query);
 }
 
 function update_count() {
